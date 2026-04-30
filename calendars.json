@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T15:02:44.454Z",
+  "generatedAt": "2026-04-30T15:45:49.816Z",
   "totalCalendars": 3,
   "totalEvents": 79,
   "categories": [
@@ -656,7 +656,7 @@
           "#fff0b8"
         ]
       },
-      "generatedAt": "2026-04-30T15:02:44.454Z"
+      "generatedAt": "2026-04-30T15:45:49.816Z"
     },
     {
       "id": "hp-birthdays-cn-ios-strict",
@@ -676,35 +676,35 @@
       "webcalUrl": "webcal://ics.hackx64.eu.org/hp_birthdays_cn_ios_strict.ics",
       "eventCount": 36,
       "dateRange": {
-        "start": "2000-01-09",
-        "end": "2000-12-31"
+        "start": "2026-01-09",
+        "end": "2026-12-31"
       },
       "previewEvents": [
         {
           "summary": "🐍 西弗勒斯·斯内普",
-          "date": "2000-01-09"
+          "date": "2026-01-09"
         },
         {
           "summary": "🦅 吉德罗·洛哈特",
-          "date": "2000-01-26"
+          "date": "2026-01-26"
         },
         {
           "summary": "🦁 莉莉·波特",
-          "date": "2000-01-30"
+          "date": "2026-01-30"
         },
         {
           "summary": "🦁 亚瑟·韦斯莱",
-          "date": "2000-02-06"
+          "date": "2026-02-06"
         },
         {
           "summary": "🦅 卢娜·洛夫古德",
-          "date": "2000-02-13"
+          "date": "2026-02-13"
         }
       ],
       "events": [
         {
           "summary": "🐍 西弗勒斯·斯内普",
-          "date": "2000-01-09",
+          "date": "2026-01-09",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -726,7 +726,7 @@
         },
         {
           "summary": "🦅 吉德罗·洛哈特",
-          "date": "2000-01-26",
+          "date": "2026-01-26",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -748,7 +748,7 @@
         },
         {
           "summary": "🦁 莉莉·波特",
-          "date": "2000-01-30",
+          "date": "2026-01-30",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -770,7 +770,7 @@
         },
         {
           "summary": "🦁 亚瑟·韦斯莱",
-          "date": "2000-02-06",
+          "date": "2026-02-06",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -792,7 +792,7 @@
         },
         {
           "summary": "🦅 卢娜·洛夫古德",
-          "date": "2000-02-13",
+          "date": "2026-02-13",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -814,7 +814,7 @@
         },
         {
           "summary": "🦡 纽特·斯卡曼德",
-          "date": "2000-02-24",
+          "date": "2026-02-24",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -836,7 +836,7 @@
         },
         {
           "summary": "🦁 罗恩·韦斯莱",
-          "date": "2000-03-01",
+          "date": "2026-03-01",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -858,7 +858,7 @@
         },
         {
           "summary": "🦅 西比尔·特里劳妮",
-          "date": "2000-03-09",
+          "date": "2026-03-09",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -880,7 +880,7 @@
         },
         {
           "summary": "🦁 莱姆斯·卢平",
-          "date": "2000-03-10",
+          "date": "2026-03-10",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -902,7 +902,7 @@
         },
         {
           "summary": "🦁 詹姆·波特",
-          "date": "2000-03-27",
+          "date": "2026-03-27",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -924,7 +924,7 @@
         },
         {
           "summary": "🦁 弗雷德&乔治·韦斯莱",
-          "date": "2000-04-01",
+          "date": "2026-04-01",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -946,7 +946,7 @@
         },
         {
           "summary": "🐍 霍拉斯·斯拉格霍恩",
-          "date": "2000-04-28",
+          "date": "2026-04-28",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -968,7 +968,7 @@
         },
         {
           "summary": "🦁 维克托娃·韦斯莱",
-          "date": "2000-05-02",
+          "date": "2026-05-02",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -990,7 +990,7 @@
         },
         {
           "summary": "🦡 波莫娜·斯普劳特",
-          "date": "2000-05-15",
+          "date": "2026-05-15",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1012,7 +1012,7 @@
         },
         {
           "summary": "🐍 德拉科·马尔福",
-          "date": "2000-06-05",
+          "date": "2026-06-05",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1034,7 +1034,7 @@
         },
         {
           "summary": "🏠 达力·德思礼",
-          "date": "2000-06-23",
+          "date": "2026-06-23",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1056,7 +1056,7 @@
         },
         {
           "summary": "🧦 多比",
-          "date": "2000-06-28",
+          "date": "2026-06-28",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1078,7 +1078,7 @@
         },
         {
           "summary": "🦁 纳威·隆巴顿",
-          "date": "2000-07-30",
+          "date": "2026-07-30",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1100,7 +1100,7 @@
         },
         {
           "summary": "🦁 哈利·波特",
-          "date": "2000-07-31",
+          "date": "2026-07-31",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1122,7 +1122,7 @@
         },
         {
           "summary": "🦁 金妮·韦斯莱",
-          "date": "2000-08-11",
+          "date": "2026-08-11",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1144,7 +1144,7 @@
         },
         {
           "summary": "🦅 塞莱斯蒂娜·沃贝克",
-          "date": "2000-08-18",
+          "date": "2026-08-18",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1166,7 +1166,7 @@
         },
         {
           "summary": "🪶 蒂娜·戈德斯坦恩",
-          "date": "2000-08-19",
+          "date": "2026-08-19",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1188,7 +1188,7 @@
         },
         {
           "summary": "🦁 珀西·韦斯莱",
-          "date": "2000-08-22",
+          "date": "2026-08-22",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1210,7 +1210,7 @@
         },
         {
           "summary": "🐍 多洛雷斯·乌姆里奇",
-          "date": "2000-08-26",
+          "date": "2026-08-26",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1232,7 +1232,7 @@
         },
         {
           "summary": "🦁 赫敏·格兰杰",
-          "date": "2000-09-19",
+          "date": "2026-09-19",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1254,7 +1254,7 @@
         },
         {
           "summary": "🦅 奥利凡德",
-          "date": "2000-09-25",
+          "date": "2026-09-25",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1276,7 +1276,7 @@
         },
         {
           "summary": "🦅 奇洛",
-          "date": "2000-09-26",
+          "date": "2026-09-26",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1298,7 +1298,7 @@
         },
         {
           "summary": "🦁 米勒娃·麦格",
-          "date": "2000-10-04",
+          "date": "2026-10-04",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1320,7 +1320,7 @@
         },
         {
           "summary": "🦅 菲利乌斯·弗立维",
-          "date": "2000-10-17",
+          "date": "2026-10-17",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1342,7 +1342,7 @@
         },
         {
           "summary": "🦁 莫丽·韦斯莱",
-          "date": "2000-10-30",
+          "date": "2026-10-30",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1364,7 +1364,7 @@
         },
         {
           "summary": "🦁 小天狼星·布莱克",
-          "date": "2000-11-03",
+          "date": "2026-11-03",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1386,7 +1386,7 @@
         },
         {
           "summary": "🦡 西尔瓦努斯·凯特尔伯恩",
-          "date": "2000-11-22",
+          "date": "2026-11-22",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1408,7 +1408,7 @@
         },
         {
           "summary": "🦁 比尔·韦斯莱",
-          "date": "2000-11-29",
+          "date": "2026-11-29",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1430,7 +1430,7 @@
         },
         {
           "summary": "🦁 鲁伯·海格",
-          "date": "2000-12-06",
+          "date": "2026-12-06",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1452,7 +1452,7 @@
         },
         {
           "summary": "🦁 查理·韦斯莱",
-          "date": "2000-12-12",
+          "date": "2026-12-12",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1474,7 +1474,7 @@
         },
         {
           "summary": "🐍 汤姆·里德尔（伏地魔）",
-          "date": "2000-12-31",
+          "date": "2026-12-31",
           "calendarId": "hp-birthdays-cn-ios-strict",
           "calendarTitle": "魔法世界生日",
           "category": {
@@ -1527,7 +1527,7 @@
           "#b8e6ff"
         ]
       },
-      "generatedAt": "2026-04-30T15:02:44.454Z"
+      "generatedAt": "2026-04-30T15:45:49.816Z"
     },
     {
       "id": "mayday-ios-icloud-named-calendar",
@@ -1547,101 +1547,35 @@
       "webcalUrl": "webcal://ics.hackx64.eu.org/mayday_ios_icloud_named_calendar.ics",
       "eventCount": 19,
       "dateRange": {
-        "start": "1973-07-28",
-        "end": "2016-07-21"
+        "start": "2026-03-29",
+        "end": "2026-12-29"
       },
       "previewEvents": [
         {
-          "summary": "冠佑生日｜刘冠佑 🥁",
-          "date": "1973-07-28"
-        },
-        {
-          "summary": "阿信生日｜陈信宏 🎤",
-          "date": "1975-12-06"
-        },
-        {
-          "summary": "石头生日｜石锦航 🪨🎸",
-          "date": "1975-12-11"
-        },
-        {
-          "summary": "怪兽生日｜温尚翊 🎸",
-          "date": "1976-11-28"
+          "summary": "五月天成军纪念日｜329 🖐️",
+          "date": "2026-03-29"
         },
         {
           "summary": "玛莎生日｜蔡昇晏 🎸",
-          "date": "1977-04-25"
+          "date": "2026-04-25"
+        },
+        {
+          "summary": "首登北京鸟巢纪念 🐦",
+          "date": "2026-04-29"
+        },
+        {
+          "summary": "五月天本命日｜May Day in May 🌕",
+          "date": "2026-05-05"
+        },
+        {
+          "summary": "《人生海海》发行纪念 🌊",
+          "date": "2026-07-06"
         }
       ],
       "events": [
         {
-          "summary": "冠佑生日｜刘冠佑 🥁",
-          "date": "1973-07-28",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "阿信生日｜陈信宏 🎤",
-          "date": "1975-12-06",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "石头生日｜石锦航 🪨🎸",
-          "date": "1975-12-11",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "怪兽生日｜温尚翊 🎸",
-          "date": "1976-11-28",
+          "summary": "五月天成军纪念日｜329 🖐️",
+          "date": "2026-03-29",
           "calendarId": "mayday-ios-icloud-named-calendar",
           "calendarTitle": "五月天",
           "category": {
@@ -1663,271 +1597,7 @@
         },
         {
           "summary": "玛莎生日｜蔡昇晏 🎸",
-          "date": "1977-04-25",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "五月天成军纪念日｜329 🖐️",
-          "date": "1997-03-29",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "正式出道纪念｜第一张创作专辑 🌍",
-          "date": "1999-07-07",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "第168场演唱会纪念 🎟️",
-          "date": "1999-08-28",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《爱情万岁》发行纪念 💙",
-          "date": "2000-07-07",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "五月天本命日｜May Day in May 🌕",
-          "date": "2001-05-05",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《人生海海》发行纪念 🌊",
-          "date": "2001-07-06",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "天空之城复出演唱会纪念 🏟️",
-          "date": "2003-08-16",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《时光机》发行纪念 ⏳",
-          "date": "2003-11-11",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《神的孩子都在跳舞》发行纪念 ✨",
-          "date": "2004-11-05",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《为爱而生》发行纪念 ❤️",
-          "date": "2006-12-29",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《后青春期的诗》发行纪念 📖",
-          "date": "2008-10-23",
-          "calendarId": "mayday-ios-icloud-named-calendar",
-          "calendarTitle": "五月天",
-          "category": {
-            "id": "music",
-            "label": "音乐 / 演出",
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          },
-          "visual": {
-            "emoji": "🎵",
-            "colors": [
-              "#ffd1ba",
-              "#ffe680"
-            ]
-          }
-        },
-        {
-          "summary": "《第二人生》发行纪念 🚀",
-          "date": "2011-12-16",
+          "date": "2026-04-25",
           "calendarId": "mayday-ios-icloud-named-calendar",
           "calendarTitle": "五月天",
           "category": {
@@ -1949,7 +1619,95 @@
         },
         {
           "summary": "首登北京鸟巢纪念 🐦",
-          "date": "2012-04-29",
+          "date": "2026-04-29",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "五月天本命日｜May Day in May 🌕",
+          "date": "2026-05-05",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《人生海海》发行纪念 🌊",
+          "date": "2026-07-06",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《爱情万岁》发行纪念 💙",
+          "date": "2026-07-07",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "正式出道纪念｜第一张创作专辑 🌍",
+          "date": "2026-07-07",
           "calendarId": "mayday-ios-icloud-named-calendar",
           "calendarTitle": "五月天",
           "category": {
@@ -1971,7 +1729,249 @@
         },
         {
           "summary": "《自传》发行纪念 📘",
-          "date": "2016-07-21",
+          "date": "2026-07-21",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "冠佑生日｜刘冠佑 🥁",
+          "date": "2026-07-28",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "天空之城复出演唱会纪念 🏟️",
+          "date": "2026-08-16",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "第168场演唱会纪念 🎟️",
+          "date": "2026-08-28",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《后青春期的诗》发行纪念 📖",
+          "date": "2026-10-23",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《神的孩子都在跳舞》发行纪念 ✨",
+          "date": "2026-11-05",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《时光机》发行纪念 ⏳",
+          "date": "2026-11-11",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "怪兽生日｜温尚翊 🎸",
+          "date": "2026-11-28",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "阿信生日｜陈信宏 🎤",
+          "date": "2026-12-06",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "石头生日｜石锦航 🪨🎸",
+          "date": "2026-12-11",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《第二人生》发行纪念 🚀",
+          "date": "2026-12-16",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《为爱而生》发行纪念 ❤️",
+          "date": "2026-12-29",
           "calendarId": "mayday-ios-icloud-named-calendar",
           "calendarTitle": "五月天",
           "category": {
@@ -2002,21 +2002,21 @@
         "五月天",
         "音乐",
         "演出",
-        "冠佑生日",
-        "刘冠佑",
-        "🥁",
-        "阿信生日",
-        "陈信宏",
-        "🎤",
-        "石头生日",
-        "石锦航",
-        "🪨🎸",
-        "怪兽生日",
-        "温尚翊",
-        "🎸",
+        "五月天成军纪念日",
+        "329",
+        "🖐️",
         "玛莎生日",
         "蔡昇晏",
-        "五月天成军纪念日"
+        "🎸",
+        "首登北京鸟巢纪念",
+        "🐦",
+        "五月天本命日",
+        "May",
+        "Day",
+        "in",
+        "🌕",
+        "《人生海海》发行纪念",
+        "🌊"
       ],
       "visual": {
         "emoji": "🎵",
@@ -2025,7 +2025,7 @@
           "#ffe680"
         ]
       },
-      "generatedAt": "2026-04-30T15:02:44.454Z"
+      "generatedAt": "2026-04-30T15:45:49.816Z"
     }
   ]
 }

@@ -64,6 +64,14 @@ test('buildCalendarRecord includes full events with calendar context', () => {
   });
 });
 
+test('buildCalendarRecord projects yearly recurring events into the generated year', () => {
+  const ics = `BEGIN:VCALENDAR\nX-WR-CALNAME:Recurring Calendar\nBEGIN:VEVENT\nSUMMARY:Annual Event\nDTSTART;VALUE=DATE:20000425\nRRULE:FREQ=YEARLY\nEND:VEVENT\nEND:VCALENDAR\n`;
+  const record = buildCalendarRecord('recurring.ics', ics, 'https://example.com/', '2026-04-30T00:00:00.000Z');
+  assert.deepEqual(record.events.map((event) => event.date), ['2026-04-25']);
+  assert.equal(record.dateRange.start, '2026-04-25');
+  assert.equal(record.previewEvents[0].date, '2026-04-25');
+});
+
 test('previewEvents remains capped while events keeps all dated events', () => {
   const events = Array.from({ length: 7 }, (_, index) => `BEGIN:VEVENT\nSUMMARY:Event ${index + 1}\nDTSTART;VALUE=DATE:2026010${index + 1}\nEND:VEVENT`).join('\n');
   const record = buildCalendarRecord('many_events.ics', `BEGIN:VCALENDAR\nX-WR-CALNAME:Many Events\n${events}\nEND:VCALENDAR\n`, 'https://example.com/');

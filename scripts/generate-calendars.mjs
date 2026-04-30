@@ -47,13 +47,22 @@ function unescapeIcsValue(value) {
     .trim();
 }
 
-function normalizeDate(value) {
+function normalizeDate(value, targetYear = null) {
   const match = String(value).match(/^(\d{4})(\d{2})(\d{2})(?:T.*)?$/);
   if (!match) {
     return null;
   }
 
-  return `${match[1]}-${match[2]}-${match[3]}`;
+  return `${targetYear ?? match[1]}-${match[2]}-${match[3]}`;
+}
+
+function isYearlyRecurrence(value) {
+  return String(value).toUpperCase().split(';').includes('FREQ=YEARLY');
+}
+
+function getGeneratedYear(generatedAt) {
+  const parsed = new Date(generatedAt);
+  return Number.isNaN(parsed.getTime()) ? new Date().getFullYear() : parsed.getFullYear();
 }
 
 function normalizeBaseUrl(baseUrl) {
@@ -140,8 +149,9 @@ export function inferCategory(fileName, icsContent) {
   return CATEGORIES.other;
 }
 
-export function parseIcsEvents(icsContent) {
+export function parseIcsEvents(icsContent, generatedAt = new Date().toISOString()) {
   const events = [];
+  const generatedYear = getGeneratedYear(generatedAt);
   let currentEvent = null;
 
   for (const line of unfoldIcsLines(icsContent)) {
@@ -153,7 +163,8 @@ export function parseIcsEvents(icsContent) {
     if (line.toUpperCase() === 'END:VEVENT') {
       if (currentEvent) {
         let summary = '';
-        let date = null;
+        let rawDate = null;
+        let repeatsYearly = false;
 
         for (const eventLine of currentEvent) {
           const property = parsePropertyLine(eventLine);
@@ -164,10 +175,13 @@ export function parseIcsEvents(icsContent) {
           if (property.key === 'SUMMARY') {
             summary = unescapeIcsValue(property.value);
           } else if (property.key === 'DTSTART') {
-            date = normalizeDate(property.value);
+            rawDate = property.value;
+          } else if (property.key === 'RRULE') {
+            repeatsYearly = isYearlyRecurrence(property.value);
           }
         }
 
+        const date = rawDate ? normalizeDate(rawDate, repeatsYearly ? generatedYear : null) : null;
         if (date) {
           events.push({ summary, date });
         }
@@ -188,7 +202,7 @@ export function parseIcsEvents(icsContent) {
 export function buildCalendarRecord(fileName, icsContent, baseUrl = DEFAULT_BASE_URL, generatedAt = new Date().toISOString()) {
   const title = extractCalendarTitle(fileName, icsContent);
   const category = inferCategory(fileName, icsContent);
-  const events = parseIcsEvents(icsContent);
+  const events = parseIcsEvents(icsContent, generatedAt);
   const dates = events.map((event) => event.date);
   const normalizedBaseUrl = normalizeBaseUrl(baseUrl);
   const url = encodeCalendarFileName(fileName);
