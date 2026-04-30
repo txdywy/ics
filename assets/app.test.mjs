@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { filterCalendars, sortCalendars, formatDateRange, createSubscriptionUrl, sanitizeDownloadUrl, sanitizeSubscriptionUrl, sanitizeCopyUrl } from './app.js';
+import { filterCalendars, sortCalendars, formatDateRange, createSubscriptionUrl, sanitizeDownloadUrl, sanitizeSubscriptionUrl, sanitizeCopyUrl, buildMonthGrid, groupEventsByDate, getYearOptions, toDateKey } from './app.js';
 
 const calendars = [
   { title: 'Chiikawa 小可爱主题日历', category: { id: 'cute', label: '角色 / 萌系' }, eventCount: 3, keywords: ['Chiikawa', '生日'], previewEvents: [{ summary: 'Chiikawa 生日', date: '2026-05-01' }], dateRange: { start: '2026-05-01', end: '2026-06-01' }, downloadUrl: 'https://example.com/Chiikawa.ics' },
@@ -59,4 +59,37 @@ test('sanitizeCopyUrl returns only copyable safe URLs', () => {
   assert.equal(sanitizeCopyUrl('/calendars/mayday.ics'), '/calendars/mayday.ics');
   assert.equal(sanitizeCopyUrl('javascript:alert(1)'), '');
   assert.equal(sanitizeCopyUrl('data:text/html,<script>alert(1)</script>'), '');
+});
+
+test('toDateKey formats local dates as YYYY-MM-DD', () => {
+  assert.equal(toDateKey(new Date(2026, 3, 5)), '2026-04-05');
+});
+
+test('buildMonthGrid returns 42 cells and starts on Monday', () => {
+  const grid = buildMonthGrid(2026, 4);
+  assert.equal(grid.length, 42);
+  assert.equal(grid[0].date, '2026-03-30');
+  assert.equal(grid[0].isCurrentMonth, false);
+  assert.equal(grid.find((day) => day.date === '2026-04-01').weekday, 2);
+});
+
+test('groupEventsByDate merges events from multiple calendars', () => {
+  const grouped = groupEventsByDate([
+    { id: 'a', title: 'A', category: { id: 'cute' }, visual: { emoji: 'A' }, downloadUrl: 'a.ics', webcalUrl: 'webcal://example.com/a.ics', events: [{ summary: 'One', date: '2026-04-01' }] },
+    { id: 'b', title: 'B', previewEvents: [{ summary: 'Two', date: '2026-04-01' }] },
+  ]);
+  const events = grouped.get('2026-04-01');
+  assert.equal(events.length, 2);
+  assert.equal(events[0].calendarId, 'a');
+  assert.equal(events[0].calendarTitle, 'A');
+  assert.deepEqual(events[0].category, { id: 'cute' });
+  assert.deepEqual(events[0].visual, { emoji: 'A' });
+  assert.equal(events[0].downloadUrl, 'a.ics');
+  assert.equal(events[0].webcalUrl, 'webcal://example.com/a.ics');
+  assert.equal(events[1].summary, 'Two');
+});
+
+test('getYearOptions derives event years and falls back around current year', () => {
+  assert.deepEqual(getYearOptions([{ events: [{ date: '2024-01-01' }, { date: '2026-12-31' }] }], 2025), [2024, 2025, 2026]);
+  assert.deepEqual(getYearOptions([], 2025), [2023, 2024, 2025, 2026, 2027]);
 });

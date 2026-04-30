@@ -86,6 +86,82 @@ export function formatDateRange(dateRange) {
   return dateRange.start ?? dateRange.end;
 }
 
+export function toDateKey(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+export function buildMonthGrid(year, month) {
+  const firstOfMonth = new Date(year, month - 1, 1);
+  const mondayOffset = (firstOfMonth.getDay() + 6) % 7;
+  const start = new Date(year, month - 1, 1 - mondayOffset);
+  const todayKey = toDateKey(new Date());
+
+  return Array.from({ length: 42 }, (_, index) => {
+    const date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + index);
+    return {
+      date: toDateKey(date),
+      day: date.getDate(),
+      weekday: (date.getDay() + 6) % 7,
+      isCurrentMonth: date.getMonth() === month - 1,
+      isToday: toDateKey(date) === todayKey,
+    };
+  });
+}
+
+export function groupEventsByDate(calendars) {
+  const grouped = new Map();
+
+  for (const calendar of calendars) {
+    const sourceEvents = Array.isArray(calendar.events) ? calendar.events : (calendar.previewEvents ?? []);
+    for (const event of sourceEvents) {
+      const date = String(event.date ?? '');
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+        continue;
+      }
+
+      const enrichedEvent = {
+        ...event,
+        calendarId: event.calendarId ?? calendar.id,
+        calendarTitle: event.calendarTitle ?? calendar.title,
+        category: event.category ?? calendar.category,
+        visual: event.visual ?? calendar.visual,
+        downloadUrl: calendar.downloadUrl,
+        webcalUrl: calendar.webcalUrl,
+      };
+      if (!grouped.has(date)) {
+        grouped.set(date, []);
+      }
+      grouped.get(date).push(enrichedEvent);
+    }
+  }
+
+  for (const events of grouped.values()) {
+    events.sort((a, b) => String(a.calendarTitle ?? '').localeCompare(String(b.calendarTitle ?? ''), 'zh-CN') || String(a.summary ?? '').localeCompare(String(b.summary ?? ''), 'zh-CN'));
+  }
+
+  return grouped;
+}
+
+export function getYearOptions(calendars, currentYear = new Date().getFullYear()) {
+  const years = new Set();
+  for (const events of groupEventsByDate(calendars).values()) {
+    for (const event of events) {
+      years.add(Number(event.date.slice(0, 4)));
+    }
+  }
+
+  if (years.size === 0) {
+    return [currentYear - 2, currentYear - 1, currentYear, currentYear + 1, currentYear + 2];
+  }
+
+  const min = Math.min(...years, currentYear);
+  const max = Math.max(...years, currentYear);
+  return Array.from({ length: max - min + 1 }, (_, index) => min + index);
+}
+
 const CONTROL_CHARACTER_PATTERN = /[\u0000-\u001f\u007f]/;
 const ABSOLUTE_SCHEME_PATTERN = /^[a-z][a-z0-9+.-]*:/i;
 const SAFE_DOWNLOAD_PROTOCOLS = new Set(['http:', 'https:']);
