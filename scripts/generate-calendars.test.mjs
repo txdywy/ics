@@ -1,10 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { mkdtemp, chmod, rm, writeFile } from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
 import {
   extractCalendarTitle,
   inferCategory,
   parseIcsEvents,
   buildCalendarRecord,
+  generateCalendarIndex,
 } from './generate-calendars.mjs';
 
 const chiikawaIcs = `BEGIN:VCALENDAR\nX-WR-CALNAME:Chiikawa 小可爱主题日历\nBEGIN:VEVENT\nSUMMARY:Chiikawa 生日\nDTSTART;VALUE=DATE:20260501\nEND:VEVENT\nEND:VCALENDAR\n`;
@@ -48,6 +52,38 @@ test('buildCalendarRecord creates stable links and visual data', () => {
 
 test('buildCalendarRecord encodes filenames as URL path segments', () => {
   const record = buildCalendarRecord('concert#1.ics', maydayIcs, 'https://example.com/ics/');
+  assert.equal(record.url, 'concert%231.ics');
   assert.equal(record.downloadUrl, 'https://example.com/ics/concert%231.ics');
   assert.equal(record.webcalUrl, 'webcal://example.com/ics/concert%231.ics');
+});
+
+test('generateCalendarIndex keeps failed calendar records with parse warnings', async () => {
+  const tempDir = await mkdtemp(path.join(os.tmpdir(), 'calendar-index-'));
+  const validPath = path.join(tempDir, 'valid.ics');
+  const unreadablePath = path.join(tempDir, 'broken#1.ics');
+
+  try {
+    await writeFile(validPath, maydayIcs, 'utf8');
+    await writeFile(unreadablePath, maydayIcs, 'utf8');
+    await chmod(unreadablePath, 0o000);
+
+    const index = await generateCalendarIndex(tempDir, 'https://example.com/ics/');
+    const validRecord = index.calendars.find((calendar) => calendar.fileName === 'valid.ics');
+    const brokenRecord = index.calendars.find((calendar) => calendar.fileName === 'broken#1.ics');
+
+    assert.equal(index.totalCalendars, 2);
+    assert.equal(validRecord.eventCount, 1);
+    assert.equal(brokenRecord.url, 'broken%231.ics');
+    assert.equal(brokenRecord.downloadUrl, 'https://example.com/ics/broken%231.ics');
+    assert.equal(brokenRecord.webcalUrl, 'webcal://example.com/ics/broken%231.ics');
+    assert.equal(brokenRecord.category.id, 'other');
+    assert.equal(brokenRecord.eventCount, 0);
+    assert.deepEqual(brokenRecord.dateRange, { start: null, end: null });
+    assert.deepEqual(brokenRecord.previewEvents, []);
+    assert.deepEqual(brokenRecord.keywords, []);
+    assert.match(brokenRecord.parseWarning, /EACCES|permission/i);
+  } finally {
+    await chmod(unreadablePath, 0o600).catch(() => {});
+    await rm(tempDir, { recursive: true, force: true });
+  }
 });

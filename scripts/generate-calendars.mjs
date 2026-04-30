@@ -60,6 +60,10 @@ function normalizeBaseUrl(baseUrl) {
   return baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 }
 
+function encodeCalendarFileName(fileName) {
+  return encodeURIComponent(fileName);
+}
+
 function createCalendarId(fileName) {
   const baseName = path.basename(fileName, path.extname(fileName));
   const id = baseName
@@ -182,14 +186,15 @@ export function buildCalendarRecord(fileName, icsContent, baseUrl = DEFAULT_BASE
   const events = parseIcsEvents(icsContent);
   const dates = events.map((event) => event.date);
   const normalizedBaseUrl = normalizeBaseUrl(baseUrl);
-  const downloadUrl = `${normalizedBaseUrl}${encodeURIComponent(fileName)}`;
+  const url = encodeCalendarFileName(fileName);
+  const downloadUrl = `${normalizedBaseUrl}${url}`;
 
   return {
     id: createCalendarId(fileName),
     fileName,
     title,
     category,
-    url: fileName,
+    url,
     downloadUrl,
     webcalUrl: downloadUrl.replace(/^https?:\/\//, 'webcal://'),
     eventCount: events.length,
@@ -207,6 +212,37 @@ export function buildCalendarRecord(fileName, icsContent, baseUrl = DEFAULT_BASE
   };
 }
 
+function buildCalendarErrorRecord(fileName, baseUrl, generatedAt, error) {
+  const title = deriveTitleFromFileName(fileName);
+  const category = CATEGORIES.other;
+  const normalizedBaseUrl = normalizeBaseUrl(baseUrl);
+  const url = encodeCalendarFileName(fileName);
+  const downloadUrl = `${normalizedBaseUrl}${url}`;
+
+  return {
+    id: createCalendarId(fileName),
+    fileName,
+    title,
+    category,
+    url,
+    downloadUrl,
+    webcalUrl: downloadUrl.replace(/^https?:\/\//, 'webcal://'),
+    eventCount: 0,
+    dateRange: {
+      start: null,
+      end: null,
+    },
+    previewEvents: [],
+    keywords: [],
+    visual: {
+      emoji: category.emoji,
+      colors: category.colors,
+    },
+    parseWarning: error instanceof Error ? error.message : String(error),
+    generatedAt,
+  };
+}
+
 export async function generateCalendarIndex(rootDir = process.cwd(), baseUrl = DEFAULT_BASE_URL) {
   const generatedAt = new Date().toISOString();
   const entries = await readdir(rootDir, { withFileTypes: true });
@@ -217,8 +253,12 @@ export async function generateCalendarIndex(rootDir = process.cwd(), baseUrl = D
 
   const calendars = [];
   for (const fileName of fileNames) {
-    const icsContent = await readFile(path.join(rootDir, fileName), 'utf8');
-    calendars.push(buildCalendarRecord(fileName, icsContent, baseUrl, generatedAt));
+    try {
+      const icsContent = await readFile(path.join(rootDir, fileName), 'utf8');
+      calendars.push(buildCalendarRecord(fileName, icsContent, baseUrl, generatedAt));
+    } catch (error) {
+      calendars.push(buildCalendarErrorRecord(fileName, baseUrl, generatedAt, error));
+    }
   }
 
   return {
