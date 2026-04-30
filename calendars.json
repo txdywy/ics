@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-04-30T12:30:48.605Z",
+  "totalCalendars": 3,
+  "totalEvents": 79,
+  "categories": [
+    {
+      "id": "cute",
+      "label": "角色 / 萌系",
+      "emoji": "🌸",
+      "colors": [
+        "#ffd6e7",
+        "#fff0b8"
+      ]
+    },
+    {
+      "id": "fantasy",
+      "label": "影视 / 魔法",
+      "emoji": "✨",
+      "colors": [
+        "#d9ccff",
+        "#b8e6ff"
+      ]
+    },
+    {
+      "id": "music",
+      "label": "音乐 / 演出",
+      "emoji": "🎵",
+      "colors": [
+        "#ffd1ba",
+        "#ffe680"
+      ]
+    },
+    {
+      "id": "birthday",
+      "label": "生日 / 纪念日",
+      "emoji": "🎂",
+      "colors": [
+        "#ffe2f2",
+        "#d8f8e1"
+      ]
+    },
+    {
+      "id": "other",
+      "label": "其他",
+      "emoji": "🗓️",
+      "colors": [
+        "#dce8ff",
+        "#f4e4ff"
+      ]
+    }
+  ],
+  "calendars": [
+    {
+      "id": "chiikawa小可爱主题日历-中文版-apple兼容",
+      "fileName": "Chiikawa小可爱主题日历_中文版_Apple兼容.ics",
+      "title": "Chiikawa小可爱日历｜中文版",
+      "category": {
+        "id": "cute",
+        "label": "角色 / 萌系",
+        "emoji": "🌸",
+        "colors": [
+          "#ffd6e7",
+          "#fff0b8"
+        ]
+      },
+      "url": "Chiikawa小可爱主题日历_中文版_Apple兼容.ics",
+      "downloadUrl": "https://calendar.rollyourown.xyz/Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
+      "webcalUrl": "webcal://calendar.rollyourown.xyz/Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
+      "eventCount": 24,
+      "dateRange": {
+        "start": "2026-01-01",
+        "end": "2026-12-31"
+      },
+      "previewEvents": [
+        {
+          "summary": "🎍 月初小小好运日",
+          "date": "2026-01-01"
+        },
+        {
+          "summary": "🔮 吉伊卡哇占卜纪念",
+          "date": "2026-01-04"
+        },
+        {
+          "summary": "🐰 兔兔生日",
+          "date": "2026-01-22"
+        },
+        {
+          "summary": "🦦 海獭师傅登场纪念",
+          "date": "2026-01-24"
+        },
+        {
+          "summary": "🍯 蜂蜜甜甜日",
+          "date": "2026-02-08"
+        }
+      ],
+      "keywords": [
+        "chiikawa小可爱日历",
+        "中文版",
+        "chiikawa小可爱主题日历",
+        "apple兼容",
+        "角色",
+        "萌系",
+        "🎍",
+        "月初小小好运日",
+        "🔮",
+        "吉伊卡哇占卜纪念",
+        "🐰",
+        "兔兔生日",
+        "🦦",
+        "海獭师傅登场纪念",
+        "🍯",
+        "蜂蜜甜甜日",
+        "🗞️",
+        "morning杂志登场纪念",
+        "📚",
+        "漫画单行本第1卷纪念",
+        "🐞",
+        "小甲虫粉丝纪念日",
+        "📺",
+        "动画开播纪念日"
+      ],
+      "visual": {
+        "emoji": "🌸",
+        "colors": [
+          "#ffd6e7",
+          "#fff0b8"
+        ]
+      },
+      "generatedAt": "2026-04-30T12:30:48.605Z"
+    },
+    {
+      "id": "hp-birthdays-cn-ios-strict",
+      "fileName": "hp_birthdays_cn_ios_strict.ics",
+      "title": "魔法世界生日",
+      "category": {
+        "id": "fantasy",
+        "label": "影视 / 魔法",
+        "emoji": "✨",
+        "colors": [
+          "#d9ccff",
+          "#b8e6ff"
+        ]
+      },
+      "url": "hp_birthdays_cn_ios_strict.ics",
+      "downloadUrl": "https://calendar.rollyourown.xyz/hp_birthdays_cn_ios_strict.ics",
+      "webcalUrl": "webcal://calendar.rollyourown.xyz/hp_birthdays_cn_ios_strict.ics",
+      "eventCount": 36,
+      "dateRange": {
+        "start": "2000-01-09",
+        "end": "2000-12-31"
+      },
+      "previewEvents": [
+        {
+          "summary": "🐍 西弗勒斯·斯内普",
+          "date": "2000-01-09"
+        },
+        {
+          "summary": "🦅 吉德罗·洛哈特",
+          "date": "2000-01-26"
+        },
+        {
+          "summary": "🦁 莉莉·波特",
+          "date": "2000-01-30"
+        },
+        {
+          "summary": "🦁 亚瑟·韦斯莱",
+          "date": "2000-02-06"
+        },
+        {
+          "summary": "🦅 卢娜·洛夫古德",
+          "date": "2000-02-13"
+        }
+      ],
+      "keywords": [
+        "魔法世界生日",
+        "hp",
+        "birthdays",
+        "cn",
+        "ios",
+        "strict",
+        "影视",
+        "魔法",
+        "🐍",
+        "西弗勒斯·斯内普",
+        "🦅",
+        "吉德罗·洛哈特",
+        "🦁",
+        "莉莉·波特",
+        "亚瑟·韦斯莱",
+        "卢娜·洛夫古德",
+        "🦡",
+        "纽特·斯卡曼德",
+        "罗恩·韦斯莱",
+        "西比尔·特里劳妮",
+        "莱姆斯·卢平",
+        "詹姆·波特"
+      ],
+      "visual": {
+        "emoji": "✨",
+        "colors": [
+          "#d9ccff",
+          "#b8e6ff"
+        ]
+      },
+      "generatedAt": "2026-04-30T12:30:48.605Z"
+    },
+    {
+      "id": "mayday-ios-icloud-named-calendar",
+      "fileName": "mayday_ios_icloud_named_calendar.ics",
+      "title": "五月天",
+      "category": {
+        "id": "music",
+        "label": "音乐 / 演出",
+        "emoji": "🎵",
+        "colors": [
+          "#ffd1ba",
+          "#ffe680"
+        ]
+      },
+      "url": "mayday_ios_icloud_named_calendar.ics",
+      "downloadUrl": "https://calendar.rollyourown.xyz/mayday_ios_icloud_named_calendar.ics",
+      "webcalUrl": "webcal://calendar.rollyourown.xyz/mayday_ios_icloud_named_calendar.ics",
+      "eventCount": 19,
+      "dateRange": {
+        "start": "1973-07-28",
+        "end": "2016-07-21"
+      },
+      "previewEvents": [
+        {
+          "summary": "冠佑生日｜刘冠佑 🥁",
+          "date": "1973-07-28"
+        },
+        {
+          "summary": "阿信生日｜陈信宏 🎤",
+          "date": "1975-12-06"
+        },
+        {
+          "summary": "石头生日｜石锦航 🪨🎸",
+          "date": "1975-12-11"
+        },
+        {
+          "summary": "怪兽生日｜温尚翊 🎸",
+          "date": "1976-11-28"
+        },
+        {
+          "summary": "玛莎生日｜蔡昇晏 🎸",
+          "date": "1977-04-25"
+        }
+      ],
+      "keywords": [
+        "五月天",
+        "mayday",
+        "ios",
+        "icloud",
+        "named",
+        "calendar",
+        "音乐",
+        "演出",
+        "冠佑生日",
+        "刘冠佑",
+        "🥁",
+        "阿信生日",
+        "陈信宏",
+        "🎤",
+        "石头生日",
+        "石锦航",
+        "🪨🎸",
+        "怪兽生日",
+        "温尚翊",
+        "🎸",
+        "玛莎生日",
+        "蔡昇晏",
+        "五月天成军纪念日",
+        "329"
+      ],
+      "visual": {
+        "emoji": "🎵",
+        "colors": [
+          "#ffd1ba",
+          "#ffe680"
+        ]
+      },
+      "generatedAt": "2026-04-30T12:30:48.605Z"
+    }
+  ]
+}
