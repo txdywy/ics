@@ -45,3 +45,9 @@ test('buildCalendarRecord creates stable links and visual data', () => {
   assert.deepEqual(record.dateRange, { start: '2026-05-20', end: '2026-05-20' });
   assert.equal(record.visual.emoji, '🎵');
 });
+
+test('buildCalendarRecord encodes filenames as URL path segments', () => {
+  const record = buildCalendarRecord('concert#1.ics', maydayIcs, 'https://example.com/ics/');
+  assert.equal(record.downloadUrl, 'https://example.com/ics/concert%231.ics');
+  assert.equal(record.webcalUrl, 'webcal://example.com/ics/concert%231.ics');
+});

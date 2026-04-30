@@ -182,7 +182,7 @@ export function buildCalendarRecord(fileName, icsContent, baseUrl = DEFAULT_BASE
   const events = parseIcsEvents(icsContent);
   const dates = events.map((event) => event.date);
   const normalizedBaseUrl = normalizeBaseUrl(baseUrl);
-  const downloadUrl = `${normalizedBaseUrl}${encodeURI(fileName)}`;
+  const downloadUrl = `${normalizedBaseUrl}${encodeURIComponent(fileName)}`;
 
   return {
     id: createCalendarId(fileName),
