@@ -86,8 +86,125 @@ export function formatDateRange(dateRange) {
   return dateRange.start ?? dateRange.end;
 }
 
+const CONTROL_CHARACTER_PATTERN = /[\u0000-\u001f\u007f]/;
+const ABSOLUTE_SCHEME_PATTERN = /^[a-z][a-z0-9+.-]*:/i;
+const SAFE_DOWNLOAD_PROTOCOLS = new Set(['http:', 'https:']);
+const SAFE_COPY_PROTOCOLS = new Set(['http:', 'https:', 'webcal:']);
+
+function normalizeCalendarUrl(value) {
+  if (typeof value !== 'string') {
+    return '';
+  }
+
+  if (CONTROL_CHARACTER_PATTERN.test(value)) {
+    return '';
+  }
+
+  return value.trim();
+}
+
+function splitPath(url) {
+  return url.split(/[?#]/, 1)[0];
+}
+
+function hasUnsafePathSegment(path) {
+  return path.split('/').some((segment) => {
+    if (!segment) {
+      return false;
+    }
+
+    try {
+      const decodedSegment = decodeURIComponent(segment);
+      return decodedSegment === '.' || decodedSegment === '..' || decodedSegment.includes('/') || decodedSegment.includes('\\');
+    } catch {
+      return true;
+    }
+  });
+}
+
+function isSafeRelativeIcsPath(url) {
+  if (!url || url.startsWith('//') || url.startsWith('?') || url.startsWith('#') || url.includes('\\') || ABSOLUTE_SCHEME_PATTERN.test(url)) {
+    return false;
+  }
+
+  const path = splitPath(url);
+  if (!path || !path.toLocaleLowerCase().endsWith('.ics')) {
+    return false;
+  }
+
+  if (path.startsWith('./')) {
+    const sameDirectoryPath = path.slice(2);
+    return Boolean(sameDirectoryPath) && !sameDirectoryPath.includes('/') && !hasUnsafePathSegment(sameDirectoryPath);
+  }
+
+  if (!path.startsWith('/') && path.includes('/')) {
+    return false;
+  }
+
+  return !hasUnsafePathSegment(path);
+}
+
+function sanitizeAbsoluteUrl(value, allowedProtocols) {
+  try {
+    const url = new URL(value);
+    if (!allowedProtocols.has(url.protocol)) {
+      return '';
+    }
+    if (url.protocol === 'webcal:' && !value.toLocaleLowerCase().startsWith('webcal://')) {
+      return '';
+    }
+    return url.href;
+  } catch {
+    return '';
+  }
+}
+
+export function sanitizeDownloadUrl(value) {
+  const url = normalizeCalendarUrl(value);
+  if (!url) {
+    return '';
+  }
+
+  if (isSafeRelativeIcsPath(url)) {
+    return url;
+  }
+
+  return sanitizeAbsoluteUrl(url, SAFE_DOWNLOAD_PROTOCOLS);
+}
+
+export function sanitizeCopyUrl(value) {
+  const url = normalizeCalendarUrl(value);
+  if (!url) {
+    return '';
+  }
+
+  if (isSafeRelativeIcsPath(url)) {
+    return url;
+  }
+
+  return sanitizeAbsoluteUrl(url, SAFE_COPY_PROTOCOLS);
+}
+
+function isSafeHttpUrl(value) {
+  return Boolean(sanitizeAbsoluteUrl(value, SAFE_DOWNLOAD_PROTOCOLS));
+}
+
 export function createSubscriptionUrl(downloadUrl) {
-  return String(downloadUrl ?? '').replace(/^https?:\/\//, 'webcal://');
+  const safeDownloadUrl = sanitizeDownloadUrl(downloadUrl);
+  if (!safeDownloadUrl || !isSafeHttpUrl(safeDownloadUrl)) {
+    return '';
+  }
+
+  return safeDownloadUrl.replace(/^https?:\/\//i, 'webcal://');
+}
+
+export function sanitizeSubscriptionUrl(webcalUrl, downloadUrl) {
+  const safeWebcalUrl = sanitizeCopyUrl(webcalUrl);
+  if (safeWebcalUrl && safeWebcalUrl.toLocaleLowerCase().startsWith('webcal://')) {
+    return safeWebcalUrl;
+  }
+
+  return createSubscriptionUrl(downloadUrl);
 }
 
 function createButton(label, type = 'button') {
@@ -166,29 +283,43 @@ function createActions(calendar) {
   const actions = document.createElement('div');
   actions.className = 'card__actions';
 
+  const downloadUrl = sanitizeDownloadUrl(calendar.downloadUrl) || sanitizeDownloadUrl(calendar.url);
+  const subscriptionUrl = sanitizeSubscriptionUrl(calendar.webcalUrl, downloadUrl);
+  const copyUrl = sanitizeCopyUrl(downloadUrl || subscriptionUrl);
+
   const downloadLink = document.createElement('a');
-  downloadLink.href = calendar.downloadUrl ?? calendar.url ?? '#';
-  downloadLink.textContent = '下载 .ics';
+  downloadLink.href = downloadUrl || '#';
+  downloadLink.textContent = downloadUrl ? '下载 .ics' : '下载不可用';
+  if (!downloadUrl) {
+    downloadLink.setAttribute('aria-disabled', 'true');
+  }
   downloadLink.setAttribute('download', calendar.fileName ?? 'calendar.ics');
   actions.append(downloadLink);
 
   const subscribeLink = document.createElement('a');
-  subscribeLink.href = calendar.webcalUrl ?? createSubscriptionUrl(calendar.downloadUrl);
-  subscribeLink.textContent = 'Webcal 订阅';
+  subscribeLink.href = subscriptionUrl || '#';
+  subscribeLink.textContent = subscriptionUrl ? 'Webcal 订阅' : '订阅不可用';
+  if (!subscriptionUrl) {
+    subscribeLink.setAttribute('aria-disabled', 'true');
+  }
   actions.append(subscribeLink);
 
-  const copyButton = createButton('复制链接');
+  const copyButton = createButton(copyUrl ? '复制链接' : '链接不可用');
+  copyButton.disabled = !copyUrl;
   copyButton.addEventListener('click', async () => {
-    const url = calendar.downloadUrl ?? calendar.url ?? '';
+    if (!copyUrl) {
+      return;
+    }
+
     try {
       if (!navigator.clipboard?.writeText) {
         throw new Error('Clipboard unavailable');
       }
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(copyUrl);
       copyButton.textContent = '已复制';
     } catch {
-      copyButton.textContent = url || '复制失败';
-      copyButton.setAttribute('aria-label', url ? `复制失败，请手动复制：${url}` : '复制失败');
+      copyButton.textContent = copyUrl;
+      copyButton.setAttribute('aria-label', `复制失败，请手动复制：${copyUrl}`);
     }
   });
   actions.append(copyButton);

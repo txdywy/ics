@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { filterCalendars, sortCalendars, formatDateRange, createSubscriptionUrl } from './app.js';
+import { filterCalendars, sortCalendars, formatDateRange, createSubscriptionUrl, sanitizeDownloadUrl, sanitizeSubscriptionUrl, sanitizeCopyUrl } from './app.js';
 
 const calendars = [
   { title: 'Chiikawa 小可爱主题日历', category: { id: 'cute', label: '角色 / 萌系' }, eventCount: 3, keywords: ['Chiikawa', '生日'], previewEvents: [{ summary: 'Chiikawa 生日', date: '2026-05-01' }], dateRange: { start: '2026-05-01', end: '2026-06-01' }, downloadUrl: 'https://example.com/Chiikawa.ics' },
@@ -26,6 +26,37 @@ test('formatDateRange handles populated and empty ranges', () => {
   assert.equal(formatDateRange({ start: null, end: null }), '日期待整理');
 });
 
-test('createSubscriptionUrl converts https links to webcal links', () => {
+test('sanitizeDownloadUrl allows safe .ics download links', () => {
+  assert.equal(sanitizeDownloadUrl('https://example.com/mayday.ics'), 'https://example.com/mayday.ics');
+  assert.equal(sanitizeDownloadUrl('/calendars/mayday.ics'), '/calendars/mayday.ics');
+  assert.equal(sanitizeDownloadUrl('mayday.ics'), 'mayday.ics');
+  assert.equal(sanitizeDownloadUrl('./mayday.ics'), './mayday.ics');
+});
+
+test('sanitizeDownloadUrl rejects unsafe and malformed links', () => {
+  assert.equal(sanitizeDownloadUrl('javascript:alert(1)'), '');
+  assert.equal(sanitizeDownloadUrl('data:text/html,<script>alert(1)</script>'), '');
+  assert.equal(sanitizeDownloadUrl('vbscript:msgbox(1)'), '');
+  assert.equal(sanitizeDownloadUrl('java\nscript:alert(1)'), '');
+  assert.equal(sanitizeDownloadUrl('//example.com/mayday.ics'), '');
+  assert.equal(sanitizeDownloadUrl('../mayday.ics'), '');
+  assert.equal(sanitizeDownloadUrl('/calendars/../mayday.ics'), '');
+});
+
+test('createSubscriptionUrl converts validated http links to webcal links', () => {
   assert.equal(createSubscriptionUrl('https://example.com/mayday.ics'), 'webcal://example.com/mayday.ics');
+  assert.equal(createSubscriptionUrl('http://example.com/mayday.ics'), 'webcal://example.com/mayday.ics');
+});
+
+test('sanitizeSubscriptionUrl allows webcal and rejects unsafe schemes', () => {
+  assert.equal(sanitizeSubscriptionUrl('webcal://example.com/mayday.ics', ''), 'webcal://example.com/mayday.ics');
+  assert.equal(sanitizeSubscriptionUrl('javascript:alert(1)', 'https://example.com/mayday.ics'), 'webcal://example.com/mayday.ics');
+  assert.equal(sanitizeSubscriptionUrl('data:text/html,<script>alert(1)</script>', 'javascript:alert(1)'), '');
+});
+
+test('sanitizeCopyUrl returns only copyable safe URLs', () => {
+  assert.equal(sanitizeCopyUrl('webcal://example.com/mayday.ics'), 'webcal://example.com/mayday.ics');
+  assert.equal(sanitizeCopyUrl('/calendars/mayday.ics'), '/calendars/mayday.ics');
+  assert.equal(sanitizeCopyUrl('javascript:alert(1)'), '');
+  assert.equal(sanitizeCopyUrl('data:text/html,<script>alert(1)</script>'), '');
 });
