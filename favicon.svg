@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cute calendar shelf icon">
+  <rect width="64" height="64" rx="18" fill="#fff2d4"/>
+  <path d="M15 20c0-5 4-9 9-9h16c5 0 9 4 9 9v27c0 5-4 9-9 9H24c-5 0-9-4-9-9V20Z" fill="#fffdf7" stroke="#7b4b2f" stroke-width="3"/>
+  <path d="M15 22c0-6 4-11 9-11h16c5 0 9 5 9 11v6H15v-6Z" fill="#ffd9e4" stroke="#7b4b2f" stroke-width="3"/>
+  <path d="M25 8v9M39 8v9" stroke="#7b4b2f" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="24" cy="37" r="3.4" fill="#ffcda8"/>
+  <circle cx="33" cy="37" r="3.4" fill="#ffe890"/>
+  <circle cx="42" cy="37" r="3.4" fill="#caecd8"/>
+  <circle cx="24" cy="47" r="3.4" fill="#bfe5ff"/>
+  <path d="M44.7 42.8c1.6-3.4 6.7-1.9 6.7 1.8 0 3.8-5.4 6.3-6.7 8.1-1.4-1.8-6.7-4.3-6.7-8.1 0-3.7 5-5.2 6.7-1.8Z" fill="#c7486c" stroke="#7b4b2f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M17 53h30" stroke="#b36b3c" stroke-width="3" stroke-linecap="round" opacity=".34"/>
+</svg>
