@@ -376,6 +376,25 @@ function createDetail(term, description) {
   return fragment;
 }
 
+function createLinkDetail(term, url, label) {
+  const fragment = document.createDocumentFragment();
+  appendText(fragment, 'dt', term);
+  const description = document.createElement('dd');
+  const safeUrl = sanitizeDownloadUrl(url);
+  if (safeUrl) {
+    const link = document.createElement('a');
+    link.className = 'card__detail-link';
+    link.href = safeUrl;
+    link.textContent = label;
+    link.setAttribute('download', '');
+    description.append(link);
+  } else {
+    description.textContent = '暂无链接';
+  }
+  fragment.append(description);
+  return fragment;
+}
+
 function createMonthEventActions(event) {
   const actions = document.createElement('div');
   actions.className = 'day-detail__actions';
@@ -657,7 +676,7 @@ function createCard(calendar) {
   const details = document.createElement('dl');
   details.className = 'card__details';
   details.append(createDetail('文件', calendar.fileName ?? '未知文件'));
-  details.append(createDetail('下载地址', calendar.downloadUrl ?? calendar.url ?? '暂无链接'));
+  details.append(createLinkDetail('下载地址', calendar.downloadUrl ?? calendar.url, '打开 / 下载日历文件'));
   body.append(details);
 
   body.append(createActions(calendar));
