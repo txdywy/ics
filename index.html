@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ICS Calendar Shelf</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -28,6 +29,53 @@
   </header>
 
   <main>
+    <section class="month-overview" aria-labelledby="month-title">
+      <div class="month-overview__header">
+        <div>
+          <h2 id="month-title">当月日历总览</h2>
+          <p>按月份查看所有主题日历事件，点击日期可以查看当天的完整事件和订阅入口。</p>
+        </div>
+        <div class="month-controls" aria-label="月份切换">
+          <button id="month-prev" type="button" aria-label="上个月">上一月</button>
+          <label for="month-year">
+            年份
+            <select id="month-year"></select>
+          </label>
+          <label for="month-select">
+            月份
+            <select id="month-select">
+              <option value="1">1月</option>
+              <option value="2">2月</option>
+              <option value="3">3月</option>
+              <option value="4">4月</option>
+              <option value="5">5月</option>
+              <option value="6">6月</option>
+              <option value="7">7月</option>
+              <option value="8">8月</option>
+              <option value="9">9月</option>
+              <option value="10">10月</option>
+              <option value="11">11月</option>
+              <option value="12">12月</option>
+            </select>
+          </label>
+          <button id="month-today" type="button">回到今天</button>
+          <button id="month-next" type="button" aria-label="下个月">下一月</button>
+        </div>
+      </div>
+      <h3 id="month-heading" aria-live="polite"></h3>
+      <div class="month-weekdays" aria-hidden="true">
+        <span>周一</span>
+        <span>周二</span>
+        <span>周三</span>
+        <span>周四</span>
+        <span>周五</span>
+        <span>周六</span>
+        <span>周日</span>
+      </div>
+      <div id="month-grid" class="month-grid" role="grid" aria-labelledby="month-heading"></div>
+      <aside id="day-detail" class="day-detail" aria-live="polite"></aside>
+    </section>
+
     <section class="controls" aria-label="筛选和显示选项">
       <label for="search-input">
         搜索日历

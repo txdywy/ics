@@ -1,4 +1,5 @@
 const hasDocument = typeof document !== 'undefined';
+const today = new Date();
 const state = {
   calendars: [],
   categories: [],
@@ -7,6 +8,10 @@ const state = {
   sortMode: 'eventCount',
   viewMode: 'grid',
   showPreview: true,
+  monthYear: today.getFullYear(),
+  month: today.getMonth() + 1,
+  selectedDate: toDateKey(today),
+  monthEvents: new Map(),
 };
 
 function toSearchText(value) {
@@ -371,6 +376,194 @@ function createDetail(term, description) {
   return fragment;
 }
 
+function createMonthEventActions(event) {
+  const actions = document.createElement('div');
+  actions.className = 'day-detail__actions';
+
+  const downloadUrl = sanitizeDownloadUrl(event.downloadUrl);
+  const subscriptionUrl = sanitizeSubscriptionUrl(event.webcalUrl, downloadUrl);
+
+  const downloadLink = document.createElement('a');
+  downloadLink.href = downloadUrl || '#';
+  downloadLink.textContent = downloadUrl ? '下载 .ics' : '下载不可用';
+  if (!downloadUrl) {
+    downloadLink.setAttribute('aria-disabled', 'true');
+  }
+  actions.append(downloadLink);
+
+  const subscribeLink = document.createElement('a');
+  subscribeLink.href = subscriptionUrl || '#';
+  subscribeLink.textContent = subscriptionUrl ? 'Webcal 订阅' : '订阅不可用';
+  if (!subscriptionUrl) {
+    subscribeLink.setAttribute('aria-disabled', 'true');
+  }
+  actions.append(subscribeLink);
+
+  return actions;
+}
+
+function shiftMonth(offset) {
+  const date = new Date(state.monthYear, state.month - 1 + offset, 1);
+  state.monthYear = date.getFullYear();
+  state.month = date.getMonth() + 1;
+  state.selectedDate = toDateKey(new Date(state.monthYear, state.month - 1, 1));
+  syncMonthSelects();
+  renderMonthCalendar();
+}
+
+function syncMonthSelects() {
+  const yearSelect = document.getElementById('month-year');
+  const monthSelect = document.getElementById('month-select');
+
+  if (yearSelect) {
+    const years = getYearOptions(state.calendars, state.monthYear);
+    yearSelect.replaceChildren(...years.map((year) => {
+      const option = document.createElement('option');
+      option.value = String(year);
+      option.textContent = `${year}年`;
+      return option;
+    }));
+    yearSelect.value = String(state.monthYear);
+  }
+
+  if (monthSelect) {
+    monthSelect.value = String(state.month);
+  }
+}
+
+function renderMonthEventPill(event) {
+  const pill = document.createElement('span');
+  pill.className = 'month-event-pill';
+  pill.textContent = `${event.visual?.emoji ?? event.category?.emoji ?? '•'} ${event.summary ?? '未命名事件'}`;
+  return pill;
+}
+
+function renderMonthDayCell(day) {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'month-day';
+  button.dataset.date = day.date;
+  button.setAttribute('role', 'gridcell');
+
+  if (!day.isCurrentMonth) {
+    button.classList.add('is-outside-month');
+  }
+  if (day.isToday) {
+    button.classList.add('is-today');
+  }
+  if (day.date === state.selectedDate) {
+    button.classList.add('is-selected');
+    button.setAttribute('aria-selected', 'true');
+  }
+
+  const events = state.monthEvents.get(day.date) ?? [];
+  button.setAttribute('aria-label', `${day.date}，${events.length} 个事件`);
+  appendText(button, 'span', String(day.day), 'month-day__number');
+
+  for (const event of events.slice(0, 3)) {
+    button.append(renderMonthEventPill(event));
+  }
+
+  if (events.length > 3) {
+    appendText(button, 'span', `+${events.length - 3} 更多`, 'month-day__more');
+  }
+
+  button.addEventListener('click', () => {
+    state.selectedDate = day.date;
+    const selected = new Date(`${day.date}T00:00:00`);
+    state.monthYear = selected.getFullYear();
+    state.month = selected.getMonth() + 1;
+    syncMonthSelects();
+    renderMonthCalendar();
+  });
+
+  return button;
+}
+
+function renderDayDetailEvent(event) {
+  const item = document.createElement('article');
+  item.className = 'day-detail__event';
+  appendText(item, 'h4', event.summary ?? '未命名事件');
+  appendText(item, 'p', event.calendarTitle ?? '未知日历', 'day-detail__calendar');
+  item.append(createMonthEventActions(event));
+  return item;
+}
+
+function renderSelectedDayDetail() {
+  const detail = document.getElementById('day-detail');
+  if (!detail) {
+    return;
+  }
+
+  const events = state.monthEvents.get(state.selectedDate) ?? [];
+  appendText(detail, 'h3', `${state.selectedDate} · ${events.length} 个事件`);
+
+  if (events.length === 0) {
+    appendText(detail, 'p', '这一天还没有事件，适合发呆和喝奶茶。', 'day-detail__empty');
+    return;
+  }
+
+  const list = document.createElement('div');
+  list.className = 'day-detail__list';
+  for (const event of events) {
+    list.append(renderDayDetailEvent(event));
+  }
+  detail.append(list);
+}
+
+function renderMonthCalendar() {
+  const heading = document.getElementById('month-heading');
+  const grid = document.getElementById('month-grid');
+  if (!grid) {
+    renderSelectedDayDetail();
+    return;
+  }
+
+  if (heading) {
+    heading.textContent = `${state.monthYear}年${state.month}月`;
+  }
+
+  const cells = buildMonthGrid(state.monthYear, state.month).map(renderMonthDayCell);
+  grid.replaceChildren(...cells);
+
+  const detail = document.getElementById('day-detail');
+  if (detail) {
+    detail.replaceChildren();
+  }
+  renderSelectedDayDetail();
+}
+
+function initializeMonthControls() {
+  const prevButton = document.getElementById('month-prev');
+  const nextButton = document.getElementById('month-next');
+  const todayButton = document.getElementById('month-today');
+  const yearSelect = document.getElementById('month-year');
+  const monthSelect = document.getElementById('month-select');
+
+  syncMonthSelects();
+
+  prevButton?.addEventListener('click', () => shiftMonth(-1));
+  nextButton?.addEventListener('click', () => shiftMonth(1));
+  todayButton?.addEventListener('click', () => {
+    const now = new Date();
+    state.monthYear = now.getFullYear();
+    state.month = now.getMonth() + 1;
+    state.selectedDate = toDateKey(now);
+    syncMonthSelects();
+    renderMonthCalendar();
+  });
+  yearSelect?.addEventListener('change', (event) => {
+    state.monthYear = Number(event.currentTarget.value);
+    state.selectedDate = toDateKey(new Date(state.monthYear, state.month - 1, 1));
+    renderMonthCalendar();
+  });
+  monthSelect?.addEventListener('change', (event) => {
+    state.month = Number(event.currentTarget.value);
+    state.selectedDate = toDateKey(new Date(state.monthYear, state.month - 1, 1));
+    renderMonthCalendar();
+  });
+}
+
 function createActions(calendar) {
   const actions = document.createElement('div');
   actions.className = 'card__actions';
@@ -563,12 +756,18 @@ async function init() {
     const index = await response.json();
     state.calendars = Array.isArray(index.calendars) ? index.calendars : [];
     state.categories = Array.isArray(index.categories) ? index.categories : [];
+    state.monthEvents = groupEventsByDate(state.calendars);
+    initializeMonthControls();
+    renderMonthCalendar();
     renderStats(index);
     renderCategoryFilters();
     renderCalendars();
   } catch (error) {
     state.calendars = [];
     state.categories = [];
+    state.monthEvents = new Map();
+    initializeMonthControls();
+    renderMonthCalendar();
     renderStats({ totalCalendars: 0, totalEvents: 0 });
     renderCategoryFilters();
     renderLoadError(error);
