@@ -89,6 +89,23 @@ test('groupEventsByDate merges events from multiple calendars', () => {
   assert.equal(events[1].summary, 'Two');
 });
 
+test('groupEventsByDate skips impossible dates', () => {
+  const grouped = groupEventsByDate([
+    {
+      id: 'dates',
+      title: 'Dates',
+      events: [
+        { summary: 'Impossible day', date: '2026-02-31' },
+        { summary: 'Impossible month', date: '2026-13-01' },
+        { summary: 'Valid', date: '2026-02-28' },
+      ],
+    },
+  ]);
+
+  assert.deepEqual([...grouped.keys()], ['2026-02-28']);
+  assert.equal(grouped.get('2026-02-28')[0].summary, 'Valid');
+});
+
 test('getYearOptions derives event years and falls back around current year', () => {
   assert.deepEqual(getYearOptions([{ events: [{ date: '2024-01-01' }, { date: '2026-12-31' }] }], 2025), [2024, 2025, 2026]);
   assert.deepEqual(getYearOptions([], 2025), [2023, 2024, 2025, 2026, 2027]);

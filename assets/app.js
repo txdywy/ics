@@ -93,6 +93,22 @@ export function toDateKey(date) {
   return `${year}-${month}-${day}`;
 }
 
+function isValidDateKey(value) {
+  const match = value.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) {
+    return false;
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const date = new Date(0);
+  date.setFullYear(year, month - 1, day);
+  date.setHours(0, 0, 0, 0);
+
+  return date.getFullYear() === year && date.getMonth() === month - 1 && date.getDate() === day;
+}
+
 export function buildMonthGrid(year, month) {
   const firstOfMonth = new Date(year, month - 1, 1);
   const mondayOffset = (firstOfMonth.getDay() + 6) % 7;
@@ -118,7 +134,7 @@ export function groupEventsByDate(calendars) {
     const sourceEvents = Array.isArray(calendar.events) ? calendar.events : (calendar.previewEvents ?? []);
     for (const event of sourceEvents) {
       const date = String(event.date ?? '');
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      if (!isValidDateKey(date)) {
         continue;
       }
 
