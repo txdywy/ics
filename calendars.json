@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T13:28:21.607Z",
+  "generatedAt": "2026-04-30T13:33:56.091Z",
   "totalCalendars": 3,
   "totalEvents": 79,
   "categories": [
@@ -64,8 +64,8 @@
         ]
       },
       "url": "Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
-      "downloadUrl": "https://calendar.rollyourown.xyz/Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
-      "webcalUrl": "webcal://calendar.rollyourown.xyz/Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
+      "downloadUrl": "https://ics.hackx64.eu.org/Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
+      "webcalUrl": "webcal://ics.hackx64.eu.org/Chiikawa%E5%B0%8F%E5%8F%AF%E7%88%B1%E4%B8%BB%E9%A2%98%E6%97%A5%E5%8E%86_%E4%B8%AD%E6%96%87%E7%89%88_Apple%E5%85%BC%E5%AE%B9.ics",
       "eventCount": 24,
       "dateRange": {
         "start": "2026-01-01",
@@ -126,7 +126,7 @@
           "#fff0b8"
         ]
       },
-      "generatedAt": "2026-04-30T13:28:21.607Z"
+      "generatedAt": "2026-04-30T13:33:56.091Z"
     },
     {
       "id": "hp-birthdays-cn-ios-strict",
@@ -142,8 +142,8 @@
         ]
       },
       "url": "hp_birthdays_cn_ios_strict.ics",
-      "downloadUrl": "https://calendar.rollyourown.xyz/hp_birthdays_cn_ios_strict.ics",
-      "webcalUrl": "webcal://calendar.rollyourown.xyz/hp_birthdays_cn_ios_strict.ics",
+      "downloadUrl": "https://ics.hackx64.eu.org/hp_birthdays_cn_ios_strict.ics",
+      "webcalUrl": "webcal://ics.hackx64.eu.org/hp_birthdays_cn_ios_strict.ics",
       "eventCount": 36,
       "dateRange": {
         "start": "2000-01-09",
@@ -203,7 +203,7 @@
           "#b8e6ff"
         ]
       },
-      "generatedAt": "2026-04-30T13:28:21.607Z"
+      "generatedAt": "2026-04-30T13:33:56.091Z"
     },
     {
       "id": "mayday-ios-icloud-named-calendar",
@@ -219,8 +219,8 @@
         ]
       },
       "url": "mayday_ios_icloud_named_calendar.ics",
-      "downloadUrl": "https://calendar.rollyourown.xyz/mayday_ios_icloud_named_calendar.ics",
-      "webcalUrl": "webcal://calendar.rollyourown.xyz/mayday_ios_icloud_named_calendar.ics",
+      "downloadUrl": "https://ics.hackx64.eu.org/mayday_ios_icloud_named_calendar.ics",
+      "webcalUrl": "webcal://ics.hackx64.eu.org/mayday_ios_icloud_named_calendar.ics",
       "eventCount": 19,
       "dateRange": {
         "start": "1973-07-28",
@@ -281,7 +281,7 @@
           "#ffe680"
         ]
       },
-      "generatedAt": "2026-04-30T13:28:21.607Z"
+      "generatedAt": "2026-04-30T13:33:56.091Z"
     }
   ]
 }

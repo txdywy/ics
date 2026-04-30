@@ -2,7 +2,7 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const DEFAULT_BASE_URL = 'https://calendar.rollyourown.xyz/';
+export const DEFAULT_BASE_URL = 'https://ics.hackx64.eu.org/';
 
 export const CATEGORIES = {
   cute: { id: 'cute', label: '角色 / 萌系', emoji: '🌸', colors: ['#ffd6e7', '#fff0b8'] },
