@@ -50,6 +50,14 @@ test('buildCalendarRecord creates stable links and visual data', () => {
   assert.equal(record.visual.emoji, '🎵');
 });
 
+test('buildCalendarRecord includes raw filename aliases in keywords', () => {
+  const chiikawaRecord = buildCalendarRecord('Chiikawa小可爱主题日历_中文版_Apple兼容.ics', chiikawaIcs, 'https://example.com/ics/');
+  const hpRecord = buildCalendarRecord('hp_birthdays_cn_ios_strict.ics', hpIcs, 'https://example.com/ics/');
+
+  assert.ok(chiikawaRecord.keywords.includes('Chiikawa'));
+  assert.ok(hpRecord.keywords.includes('hp'));
+});
+
 test('buildCalendarRecord encodes filenames as URL path segments', () => {
   const record = buildCalendarRecord('concert#1.ics', maydayIcs, 'https://example.com/ics/');
   assert.equal(record.url, 'concert%231.ics');

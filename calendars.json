@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T12:40:38.343Z",
+  "generatedAt": "2026-04-30T13:26:17.926Z",
   "totalCalendars": 3,
   "totalEvents": 79,
   "categories": [
@@ -94,10 +94,13 @@
         }
       ],
       "keywords": [
-        "chiikawa小可爱日历",
+        "Chiikawa小可爱主题日历_中文版_Apple兼容",
+        "Chiikawa小可爱主题日历",
         "中文版",
-        "chiikawa小可爱主题日历",
-        "apple兼容",
+        "Apple兼容",
+        "Chiikawa",
+        "Apple",
+        "Chiikawa小可爱日历",
         "角色",
         "萌系",
         "🎍",
@@ -111,13 +114,10 @@
         "🍯",
         "蜂蜜甜甜日",
         "🗞️",
-        "morning杂志登场纪念",
+        "Morning杂志登场纪念",
         "📚",
         "漫画单行本第1卷纪念",
-        "🐞",
-        "小甲虫粉丝纪念日",
-        "📺",
-        "动画开播纪念日"
+        "🐞"
       ],
       "visual": {
         "emoji": "🌸",
@@ -126,7 +126,7 @@
           "#fff0b8"
         ]
       },
-      "generatedAt": "2026-04-30T12:40:38.343Z"
+      "generatedAt": "2026-04-30T13:26:17.926Z"
     },
     {
       "id": "hp-birthdays-cn-ios-strict",
@@ -172,12 +172,13 @@
         }
       ],
       "keywords": [
-        "魔法世界生日",
+        "hp_birthdays_cn_ios_strict",
         "hp",
         "birthdays",
         "cn",
         "ios",
         "strict",
+        "魔法世界生日",
         "影视",
         "魔法",
         "🐍",
@@ -202,7 +203,7 @@
           "#b8e6ff"
         ]
       },
-      "generatedAt": "2026-04-30T12:40:38.343Z"
+      "generatedAt": "2026-04-30T13:26:17.926Z"
     },
     {
       "id": "mayday-ios-icloud-named-calendar",
@@ -248,12 +249,13 @@
         }
       ],
       "keywords": [
-        "五月天",
+        "mayday_ios_icloud_named_calendar",
         "mayday",
         "ios",
         "icloud",
         "named",
         "calendar",
+        "五月天",
         "音乐",
         "演出",
         "冠佑生日",
@@ -270,8 +272,7 @@
         "🎸",
         "玛莎生日",
         "蔡昇晏",
-        "五月天成军纪念日",
-        "329"
+        "五月天成军纪念日"
       ],
       "visual": {
         "emoji": "🎵",
@@ -280,7 +281,7 @@
           "#ffe680"
         ]
       },
-      "generatedAt": "2026-04-30T12:40:38.343Z"
+      "generatedAt": "2026-04-30T13:26:17.926Z"
     }
   ]
 }

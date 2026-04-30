@@ -83,14 +83,19 @@ function deriveTitleFromFileName(fileName) {
 }
 
 function collectKeywords(fileName, title, events, category) {
+  const baseName = path.basename(fileName, path.extname(fileName));
+  const filenameKeywords = [
+    baseName,
+    baseName.replace(/[_-]+/g, ' '),
+    ...(baseName.match(/[A-Za-z0-9]+/g) ?? []),
+  ];
   const words = [
+    ...filenameKeywords,
     title,
-    path.basename(fileName, path.extname(fileName)).replace(/[_-]+/g, ' '),
     category.label,
     ...events.slice(0, 10).map((event) => event.summary),
   ]
     .join(' ')
-    .toLowerCase()
     .split(/[\s,，、|｜/\\]+/u)
     .map((word) => word.trim())
     .filter(Boolean);
