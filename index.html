@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICS Calendar Shelf</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">可订阅日历收藏架</p>
+    <h1>ICS Calendar Shelf</h1>
+    <p class="hero__lede">浏览、筛选并订阅公开的 .ics 日历文件，把喜欢的主题日历加入你的常用日历 App。</p>
+    <dl class="hero__stats" aria-label="日历统计">
+      <div>
+        <dt>日历</dt>
+        <dd id="stat-calendars">—</dd>
+      </div>
+      <div>
+        <dt>事件</dt>
+        <dd id="stat-events">—</dd>
+      </div>
+      <div>
+        <dt>更新</dt>
+        <dd id="stat-updated">—</dd>
+      </div>
+    </dl>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="筛选和显示选项">
+      <label for="search-input">
+        搜索日历
+        <input id="search-input" type="search" placeholder="搜索标题、分类、关键词或事件" autocomplete="off">
+      </label>
+
+      <div class="control-group">
+        <span>分类</span>
+        <div id="category-filters" class="chip-row" role="group" aria-label="日历分类"></div>
+      </div>
+
+      <label for="sort-select">
+        排序
+        <select id="sort-select">
+          <option value="eventCount">事件数量</option>
+          <option value="name">名称</option>
+          <option value="theme">主题分类</option>
+        </select>
+      </label>
+
+      <label for="view-select">
+        视图
+        <select id="view-select">
+          <option value="grid">卡片</option>
+          <option value="compact">紧凑</option>
+        </select>
+      </label>
+
+      <label class="toggle" for="preview-toggle">
+        <input id="preview-toggle" type="checkbox" checked>
+        显示事件预览
+      </label>
+    </section>
+
+    <section id="status" class="status" role="status" aria-live="polite">正在加载日历……</section>
+
+    <section id="calendar-grid" class="calendar-grid" aria-label="日历列表"></section>
+
+    <section class="guide" aria-labelledby="guide-title">
+      <h2 id="guide-title">订阅提示</h2>
+      <article>
+        <h3>Apple Calendar</h3>
+        <p>点击「Webcal 订阅」或复制订阅链接，在日历 App 中选择「文件」→「新建日历订阅」并粘贴链接。</p>
+      </article>
+      <article>
+        <h3>Google Calendar</h3>
+        <p>在网页版 Google Calendar 的「其他日历」中选择「通过网址」，粘贴 .ics 下载链接并添加。</p>
+      </article>
+      <article>
+        <h3>Outlook</h3>
+        <p>在 Outlook 日历中选择「添加日历」→「从 Web 订阅」，粘贴订阅链接并保存。</p>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
