@@ -1350,13 +1350,21 @@ main {
   }
 
   .month-event-pill {
-    min-height: 0.32rem;
-    padding: 0;
-    border: 0;
-    border-radius: 999px;
-    color: transparent;
-    background: var(--event-color, var(--berry));
+    min-height: 1.05rem;
+    padding: 0.08rem 0.22rem;
+    border: 1px solid color-mix(in srgb, var(--event-color, var(--berry)) 34%, white);
+    border-left-width: 0.18rem;
+    border-radius: 0.42rem;
+    color: color-mix(in srgb, var(--event-color, var(--berry)) 46%, var(--ink));
+    background: linear-gradient(90deg, color-mix(in srgb, var(--event-color, var(--berry)) 18%, white), rgba(255, 255, 255, 0.72));
     box-shadow: none;
+    font-size: 0.5rem;
+    line-height: 1.12;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .month-day__more {

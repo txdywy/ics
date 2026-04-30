@@ -433,7 +433,9 @@ function syncMonthSelects() {
 
 function renderMonthEventPill(event) {
   const pill = document.createElement('span');
+  const eventColor = event.visual?.colors?.[0] ?? event.category?.colors?.[0] ?? '#c7486c';
   pill.className = 'month-event-pill';
+  pill.style.setProperty('--event-color', eventColor);
   pill.textContent = `${event.visual?.emoji ?? event.category?.emoji ?? '•'} ${event.summary ?? '未命名事件'}`;
   return pill;
 }
