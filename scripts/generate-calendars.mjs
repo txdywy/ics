@@ -193,9 +193,21 @@ export function buildCalendarRecord(fileName, icsContent, baseUrl = DEFAULT_BASE
   const normalizedBaseUrl = normalizeBaseUrl(baseUrl);
   const url = encodeCalendarFileName(fileName);
   const downloadUrl = `${normalizedBaseUrl}${url}`;
+  const id = createCalendarId(fileName);
+  const visual = {
+    emoji: category.emoji,
+    colors: category.colors,
+  };
+  const monthEvents = events.map((event) => ({
+    ...event,
+    calendarId: id,
+    calendarTitle: title,
+    category,
+    visual,
+  }));
 
   return {
-    id: createCalendarId(fileName),
+    id,
     fileName,
     title,
     category,
@@ -208,11 +220,9 @@ export function buildCalendarRecord(fileName, icsContent, baseUrl = DEFAULT_BASE
       end: dates.at(-1) ?? null,
     },
     previewEvents: events.slice(0, 5),
+    events: monthEvents,
     keywords: collectKeywords(fileName, title, events, category),
-    visual: {
-      emoji: category.emoji,
-      colors: category.colors,
-    },
+    visual,
     generatedAt,
   };
 }
@@ -238,6 +248,7 @@ function buildCalendarErrorRecord(fileName, baseUrl, generatedAt, error) {
       end: null,
     },
     previewEvents: [],
+    events: [],
     keywords: [],
     visual: {
       emoji: category.emoji,

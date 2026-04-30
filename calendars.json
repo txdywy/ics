@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T13:33:56.091Z",
+  "generatedAt": "2026-04-30T14:16:26.837Z",
   "totalCalendars": 3,
   "totalEvents": 79,
   "categories": [
@@ -93,6 +93,536 @@
           "date": "2026-02-08"
         }
       ],
+      "events": [
+        {
+          "summary": "🎍 月初小小好运日",
+          "date": "2026-01-01",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🔮 吉伊卡哇占卜纪念",
+          "date": "2026-01-04",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🐰 兔兔生日",
+          "date": "2026-01-22",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🦦 海獭师傅登场纪念",
+          "date": "2026-01-24",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🍯 蜂蜜甜甜日",
+          "date": "2026-02-08",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🗞️ Morning杂志登场纪念",
+          "date": "2026-02-10",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "📚 漫画单行本第1卷纪念",
+          "date": "2026-02-12",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🐞 小甲虫粉丝纪念日",
+          "date": "2026-03-13",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "📺 动画开播纪念日",
+          "date": "2026-04-04",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🎂 吉伊卡哇 & 小八双生日",
+          "date": "2026-05-01",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "💞 朋友贴贴日",
+          "date": "2026-05-18",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🌰 栗子馒头登场纪念",
+          "date": "2026-05-22",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🌿 讨伐&除草日",
+          "date": "2026-06-15",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🩷 飞鼠登场纪念",
+          "date": "2026-07-22",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "⭐ 飞鼠撒娇日",
+          "date": "2026-07-27",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🧜 人鱼岛电影纪念",
+          "date": "2026-08-08",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🌺 狮萨登场纪念",
+          "date": "2026-08-24",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🍜 郎拉面日",
+          "date": "2026-09-10",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🍂 栗子馒头暖心日",
+          "date": "2026-10-16",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🎬 动画化发表纪念",
+          "date": "2026-10-28",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🌙 睡衣派对日",
+          "date": "2026-11-11",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🫶 小可爱感恩日",
+          "date": "2026-11-23",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🎄 小小圣诞准备日",
+          "date": "2026-12-24",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        },
+        {
+          "summary": "🎁 年末小奖励日",
+          "date": "2026-12-31",
+          "calendarId": "chiikawa小可爱主题日历-中文版-apple兼容",
+          "calendarTitle": "Chiikawa小可爱日历｜中文版",
+          "category": {
+            "id": "cute",
+            "label": "角色 / 萌系",
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          },
+          "visual": {
+            "emoji": "🌸",
+            "colors": [
+              "#ffd6e7",
+              "#fff0b8"
+            ]
+          }
+        }
+      ],
       "keywords": [
         "Chiikawa小可爱主题日历_中文版_Apple兼容",
         "Chiikawa小可爱主题日历",
@@ -126,7 +656,7 @@
           "#fff0b8"
         ]
       },
-      "generatedAt": "2026-04-30T13:33:56.091Z"
+      "generatedAt": "2026-04-30T14:16:26.837Z"
     },
     {
       "id": "hp-birthdays-cn-ios-strict",
@@ -171,6 +701,800 @@
           "date": "2000-02-13"
         }
       ],
+      "events": [
+        {
+          "summary": "🐍 西弗勒斯·斯内普",
+          "date": "2000-01-09",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 吉德罗·洛哈特",
+          "date": "2000-01-26",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 莉莉·波特",
+          "date": "2000-01-30",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 亚瑟·韦斯莱",
+          "date": "2000-02-06",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 卢娜·洛夫古德",
+          "date": "2000-02-13",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦡 纽特·斯卡曼德",
+          "date": "2000-02-24",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 罗恩·韦斯莱",
+          "date": "2000-03-01",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 西比尔·特里劳妮",
+          "date": "2000-03-09",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 莱姆斯·卢平",
+          "date": "2000-03-10",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 詹姆·波特",
+          "date": "2000-03-27",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 弗雷德&乔治·韦斯莱",
+          "date": "2000-04-01",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🐍 霍拉斯·斯拉格霍恩",
+          "date": "2000-04-28",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 维克托娃·韦斯莱",
+          "date": "2000-05-02",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦡 波莫娜·斯普劳特",
+          "date": "2000-05-15",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🐍 德拉科·马尔福",
+          "date": "2000-06-05",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🏠 达力·德思礼",
+          "date": "2000-06-23",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🧦 多比",
+          "date": "2000-06-28",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 纳威·隆巴顿",
+          "date": "2000-07-30",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 哈利·波特",
+          "date": "2000-07-31",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 金妮·韦斯莱",
+          "date": "2000-08-11",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 塞莱斯蒂娜·沃贝克",
+          "date": "2000-08-18",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🪶 蒂娜·戈德斯坦恩",
+          "date": "2000-08-19",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 珀西·韦斯莱",
+          "date": "2000-08-22",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🐍 多洛雷斯·乌姆里奇",
+          "date": "2000-08-26",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 赫敏·格兰杰",
+          "date": "2000-09-19",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 奥利凡德",
+          "date": "2000-09-25",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 奇洛",
+          "date": "2000-09-26",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 米勒娃·麦格",
+          "date": "2000-10-04",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦅 菲利乌斯·弗立维",
+          "date": "2000-10-17",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 莫丽·韦斯莱",
+          "date": "2000-10-30",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 小天狼星·布莱克",
+          "date": "2000-11-03",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦡 西尔瓦努斯·凯特尔伯恩",
+          "date": "2000-11-22",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 比尔·韦斯莱",
+          "date": "2000-11-29",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 鲁伯·海格",
+          "date": "2000-12-06",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🦁 查理·韦斯莱",
+          "date": "2000-12-12",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        },
+        {
+          "summary": "🐍 汤姆·里德尔（伏地魔）",
+          "date": "2000-12-31",
+          "calendarId": "hp-birthdays-cn-ios-strict",
+          "calendarTitle": "魔法世界生日",
+          "category": {
+            "id": "fantasy",
+            "label": "影视 / 魔法",
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          },
+          "visual": {
+            "emoji": "✨",
+            "colors": [
+              "#d9ccff",
+              "#b8e6ff"
+            ]
+          }
+        }
+      ],
       "keywords": [
         "hp_birthdays_cn_ios_strict",
         "hp",
@@ -203,7 +1527,7 @@
           "#b8e6ff"
         ]
       },
-      "generatedAt": "2026-04-30T13:33:56.091Z"
+      "generatedAt": "2026-04-30T14:16:26.837Z"
     },
     {
       "id": "mayday-ios-icloud-named-calendar",
@@ -248,6 +1572,426 @@
           "date": "1977-04-25"
         }
       ],
+      "events": [
+        {
+          "summary": "冠佑生日｜刘冠佑 🥁",
+          "date": "1973-07-28",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "阿信生日｜陈信宏 🎤",
+          "date": "1975-12-06",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "石头生日｜石锦航 🪨🎸",
+          "date": "1975-12-11",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "怪兽生日｜温尚翊 🎸",
+          "date": "1976-11-28",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "玛莎生日｜蔡昇晏 🎸",
+          "date": "1977-04-25",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "五月天成军纪念日｜329 🖐️",
+          "date": "1997-03-29",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "正式出道纪念｜第一张创作专辑 🌍",
+          "date": "1999-07-07",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "第168场演唱会纪念 🎟️",
+          "date": "1999-08-28",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《爱情万岁》发行纪念 💙",
+          "date": "2000-07-07",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "五月天本命日｜May Day in May 🌕",
+          "date": "2001-05-05",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《人生海海》发行纪念 🌊",
+          "date": "2001-07-06",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "天空之城复出演唱会纪念 🏟️",
+          "date": "2003-08-16",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《时光机》发行纪念 ⏳",
+          "date": "2003-11-11",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《神的孩子都在跳舞》发行纪念 ✨",
+          "date": "2004-11-05",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《为爱而生》发行纪念 ❤️",
+          "date": "2006-12-29",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《后青春期的诗》发行纪念 📖",
+          "date": "2008-10-23",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《第二人生》发行纪念 🚀",
+          "date": "2011-12-16",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "首登北京鸟巢纪念 🐦",
+          "date": "2012-04-29",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        },
+        {
+          "summary": "《自传》发行纪念 📘",
+          "date": "2016-07-21",
+          "calendarId": "mayday-ios-icloud-named-calendar",
+          "calendarTitle": "五月天",
+          "category": {
+            "id": "music",
+            "label": "音乐 / 演出",
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          },
+          "visual": {
+            "emoji": "🎵",
+            "colors": [
+              "#ffd1ba",
+              "#ffe680"
+            ]
+          }
+        }
+      ],
       "keywords": [
         "mayday_ios_icloud_named_calendar",
         "mayday",
@@ -281,7 +2025,7 @@
           "#ffe680"
         ]
       },
-      "generatedAt": "2026-04-30T13:33:56.091Z"
+      "generatedAt": "2026-04-30T14:16:26.837Z"
     }
   ]
 }

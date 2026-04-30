@@ -50,6 +50,28 @@ test('buildCalendarRecord creates stable links and visual data', () => {
   assert.equal(record.visual.emoji, '🎵');
 });
 
+test('buildCalendarRecord includes full events with calendar context', () => {
+  const ics = `BEGIN:VCALENDAR\nX-WR-CALNAME:Test Calendar\nBEGIN:VEVENT\nSUMMARY:First Event\nDTSTART;VALUE=DATE:20260101\nEND:VEVENT\nBEGIN:VEVENT\nSUMMARY:Second Event\nDTSTART;VALUE=DATE:20260102\nEND:VEVENT\nEND:VCALENDAR\n`;
+  const record = buildCalendarRecord('test_calendar.ics', ics, 'https://example.com/');
+  assert.equal(record.events.length, 2);
+  assert.deepEqual(record.events[0], {
+    summary: 'First Event',
+    date: '2026-01-01',
+    calendarId: record.id,
+    calendarTitle: 'Test Calendar',
+    category: record.category,
+    visual: record.visual,
+  });
+});
+
+test('previewEvents remains capped while events keeps all dated events', () => {
+  const events = Array.from({ length: 7 }, (_, index) => `BEGIN:VEVENT\nSUMMARY:Event ${index + 1}\nDTSTART;VALUE=DATE:2026010${index + 1}\nEND:VEVENT`).join('\n');
+  const record = buildCalendarRecord('many_events.ics', `BEGIN:VCALENDAR\nX-WR-CALNAME:Many Events\n${events}\nEND:VCALENDAR\n`, 'https://example.com/');
+  assert.equal(record.previewEvents.length, 5);
+  assert.equal(record.events.length, 7);
+  assert.equal(record.events[6].summary, 'Event 7');
+});
+
 test('buildCalendarRecord includes raw filename aliases in keywords', () => {
   const chiikawaRecord = buildCalendarRecord('Chiikawa小可爱主题日历_中文版_Apple兼容.ics', chiikawaIcs, 'https://example.com/ics/');
   const hpRecord = buildCalendarRecord('hp_birthdays_cn_ios_strict.ics', hpIcs, 'https://example.com/ics/');
